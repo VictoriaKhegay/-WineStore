@@ -75,7 +75,8 @@ body{
         justify-content: center;
         align-items: center;
         padding: 15px 30px;
-        gap: 10px;
+        gap: 30px;
+        padding-bottom: 150px;
         
         button{
             width: 203px;
@@ -86,8 +87,314 @@ body{
             text-transform: uppercase;
             font-size: 16px;
             letter-spacing: 0.05em;
+            cursor: pointer;
         }
     }
 }
+.wine-taste{
+    background-color: #282828;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &-wrapper{
+        border: 3px solid #C4C4C4;
+        width: 1110px;
+        height: 656px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title{
+            width: 736px;
+            font-size: 34px;
+            text-align: center; 
+            padding-top: 80px;
+            padding-bottom: 40px; 
+        }
+        &__description{
+            width: 736px;
+            font-size: 16px;
+            text-align: center;
+            padding-top: 40px; 
+        }
+        img{
+            width: 160px;
+            height: 160px;
+            padding-top: 50px; 
+            padding-bottom: 40px; 
+        }
+        hr {
+            width: 160px;
+            min-width: 20%;
+            max-width: 100%;
+            margin: 0 auto;
+            //border: none;
+            border-bottom: 1px solid #FFFFFF;
+            //position: relative;
+        }
+    }
+}
+.wine-harvest{
+    background-color: #E6E3C4;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .top{
+        border: 1px solid #998431;
+    }
+    .lower{
+        border: 1px solid #998431;
+    }
+    .middle{
+        border: 1px solid #282828;
+        width: 160px;
+        min-width: 20%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .collection{
+        display: grid;
+        grid-template-columns: 540px 540px;
+        padding-bottom: 60px;
+        &-text{
+            color: #282828;
+            &__pnew{
+                padding-top: 60px;  
+                padding-bottom: 30px;
+                font-size: 16px;
+                color: #000000;
+            }
+            &__title{
+                font-size: 36px;
+                padding-bottom: 30px;
+            }
+            &__desc{
+                padding-top: 30px;
+                font-size: 14px;
+                width: 445px;
+                padding-bottom: 30px;;
+            }
+            &__table{
+                border-collapse: collapse;
+                border: none;
+                td, th {
+                    border: 1px solid #282828;
+                    text-align: center; 
+                    padding: 20px;
+                    p{
+                        font-size: 14px; 
+                        text-align: left;
+                    }
+                    h5{
+                        font-size: 18px;
+                        text-align: left;
+                        padding-bottom: 5px;
+                    }
+                }
+                th:last-child{
+                    border-right: none;                    
+                }
+                th:first-child{
+                    border-left: none;                    
+                }
+                tr:last-child th {
+                    border-bottom: none;
+                }
+                tr:first-child th {
+                    border-bottom: none;
+                    border-top: none;
+                }
+            }
+            &__button{
+                width: 203px;
+                height: 50px;
+                background: #99862A;
+                border: none;
+                color: white;
+                text-transform: uppercase;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                margin-top: 20px;
+                cursor: pointer;
+                
+            }
+        }
+        &-img {
+            &__big{
+                padding-top: 60px;
+                img{
+                width: 540px;
+                height: 500px;
+                }
+            }
+            &__small{
+                padding-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                img{
+                width: 255px;
+                height: 228px;
+                }
+                &-first{
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
+.wine-record{
+    background-color: #282828;
+    padding-top: 129px;
+    padding-bottom: 100px;
+    .wine-tasting{
+        width: 1110px;
+        height: 538px;
+        border: 3px solid #C4C4C4;
+        z-index: 1; 
+        position: relative;
+        &__title{
+            font-size:36px;
+            position: absolute;
+            z-index: 2; 
+            top: -30px; 
+            left: 30%;
+            background-color: #282828;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .img1{
+            position: absolute;
+            z-index: 2;
+            z-index: 2; 
+            top: -90px; 
+            left: -10%;
+            padding-right: 50px;
+            background-color: #282828;
+
+        }
+        .img2{
+            position: absolute;
+            z-index: 2;
+            z-index: 2; 
+            top: -40px; 
+            right: -10%;
+            padding-bottom: 30px;
+            background-color: #282828;
+        }
+        &__application{
+            width: 550px;
+            height: auto;
+            display: flex;
+            padding-top: 80px;
+            margin: auto; 
+            flex-direction: column;      
+            .top{
+                width: 160px;
+                min-width: 20%;
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+        &__descr{
+            font-size: 16px;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+        &__form{
+            display: grid;
+            &-nametel{ 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            ::placeholder{
+                color: #FFFFFF;
+                font-size: 13px;
+            }
+            input{
+                background-color: #282828;
+                border: none;
+                border-bottom: 1px solid #FFFFFF;
+                padding: 10px;
+                margin-bottom: 40px;
+            }
+        }
+        select{
+                background-color: #282828;
+                border: none;
+                border-bottom: 1px solid #FFFFFF;
+                padding: 10px;
+                margin-bottom: 40px;
+                color: #FFFFFF;
+                font-size: 13px;
+            }
+        }
+    &__button{
+        border: 1px solid #FFFFFF;
+        background-color: #282828;
+        color: #FFFFFF;
+        font-size: 16px;
+        padding: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+}
+footer{    
+    background-color: #998431;
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+    .footer-info{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        &__menu{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            ul, li{
+                list-style: none;
+            }
+            
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }                  
+        }
+        &__contact{
+            table{
+                width: 100%; 
+                border-collapse: collapse;
+                //border: 1px solid #FFFFFF;
+            }
+            th {
+                border: 1px solid #FFFFFF;
+                width: 285px;
+                height: 47px;
+                text-align: center;
+            }
+            th:last-child{
+                border-right: none;
+            }
+            th:first-child{
+                border-left: none;
+            }
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            &__adress{
+                text-transform: uppercase;
+            }
+            &__social{
+                img{
+                    padding-inline: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+    
+
+
 
 

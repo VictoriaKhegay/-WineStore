@@ -71,7 +71,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  gap: 10px;
+  gap: 30px;
+  padding-bottom: 150px;
 }
 .main_button button {
   width: 203px;
@@ -82,4 +83,303 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.wine-taste {
+  background-color: #282828;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.wine-taste-wrapper {
+  border: 3px solid #C4C4C4;
+  width: 1110px;
+  height: 656px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wine-taste-wrapper__title {
+  width: 736px;
+  font-size: 34px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.wine-taste-wrapper__description {
+  width: 736px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 40px;
+}
+.wine-taste-wrapper img {
+  width: 160px;
+  height: 160px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.wine-taste-wrapper hr {
+  width: 160px;
+  min-width: 20%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.wine-harvest {
+  background-color: #E6E3C4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.wine-harvest .top {
+  border: 1px solid #998431;
+}
+.wine-harvest .lower {
+  border: 1px solid #998431;
+}
+.wine-harvest .middle {
+  border: 1px solid #282828;
+  width: 160px;
+  min-width: 20%;
+  max-width: 100%;
+  margin: 0;
+}
+.wine-harvest .collection {
+  display: grid;
+  grid-template-columns: 540px 540px;
+  padding-bottom: 60px;
+}
+.wine-harvest .collection-text {
+  color: #282828;
+}
+.wine-harvest .collection-text__pnew {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #000000;
+}
+.wine-harvest .collection-text__title {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+.wine-harvest .collection-text__desc {
+  padding-top: 30px;
+  font-size: 14px;
+  width: 445px;
+  padding-bottom: 30px;
+}
+.wine-harvest .collection-text__table {
+  border-collapse: collapse;
+  border: none;
+}
+.wine-harvest .collection-text__table td, .wine-harvest .collection-text__table th {
+  border: 1px solid #282828;
+  text-align: center;
+  padding: 20px;
+}
+.wine-harvest .collection-text__table td p, .wine-harvest .collection-text__table th p {
+  font-size: 14px;
+  text-align: left;
+}
+.wine-harvest .collection-text__table td h5, .wine-harvest .collection-text__table th h5 {
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.wine-harvest .collection-text__table th:last-child {
+  border-right: none;
+}
+.wine-harvest .collection-text__table th:first-child {
+  border-left: none;
+}
+.wine-harvest .collection-text__table tr:last-child th {
+  border-bottom: none;
+}
+.wine-harvest .collection-text__table tr:first-child th {
+  border-bottom: none;
+  border-top: none;
+}
+.wine-harvest .collection-text__button {
+  width: 203px;
+  height: 50px;
+  background: #99862A;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.wine-harvest .collection-img__big {
+  padding-top: 60px;
+}
+.wine-harvest .collection-img__big img {
+  width: 540px;
+  height: 500px;
+}
+.wine-harvest .collection-img__small {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wine-harvest .collection-img__small img {
+  width: 255px;
+  height: 228px;
+}
+.wine-harvest .collection-img__small-first {
+  padding-right: 30px;
+}
+
+.wine-record {
+  background-color: #282828;
+  padding-top: 129px;
+  padding-bottom: 100px;
+}
+.wine-record .wine-tasting {
+  width: 1110px;
+  height: 538px;
+  border: 3px solid #C4C4C4;
+  z-index: 1;
+  position: relative;
+}
+.wine-record .wine-tasting__title {
+  font-size: 36px;
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  left: 30%;
+  background-color: #282828;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.wine-record .wine-tasting .img1 {
+  position: absolute;
+  z-index: 2;
+  z-index: 2;
+  top: -90px;
+  left: -10%;
+  padding-right: 50px;
+  background-color: #282828;
+}
+.wine-record .wine-tasting .img2 {
+  position: absolute;
+  z-index: 2;
+  z-index: 2;
+  top: -40px;
+  right: -10%;
+  padding-bottom: 30px;
+  background-color: #282828;
+}
+.wine-record .wine-tasting__application {
+  width: 550px;
+  height: auto;
+  display: flex;
+  padding-top: 80px;
+  margin: auto;
+  flex-direction: column;
+}
+.wine-record .wine-tasting__application .top {
+  width: 160px;
+  min-width: 20%;
+  max-width: 100%;
+  margin: auto;
+}
+.wine-record .wine-tasting__descr {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.wine-record .wine-tasting__form {
+  display: grid;
+}
+.wine-record .wine-tasting__form-nametel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.wine-record .wine-tasting__form-nametel ::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 13px;
+}
+.wine-record .wine-tasting__form-nametel ::placeholder {
+  color: #FFFFFF;
+  font-size: 13px;
+}
+.wine-record .wine-tasting__form-nametel input {
+  background-color: #282828;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.wine-record .wine-tasting__form select {
+  background-color: #282828;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 10px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+.wine-record .wine-tasting__button {
+  border: 1px solid #FFFFFF;
+  background-color: #282828;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #998431;
+}
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+footer .footer-info {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+footer .footer-info__menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer .footer-info__menu ul, footer .footer-info__menu li {
+  list-style: none;
+}
+footer .footer-info__menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-info__contact {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+footer .footer-info__contact table {
+  width: 100%;
+  border-collapse: collapse;
+}
+footer .footer-info__contact th {
+  border: 1px solid #FFFFFF;
+  width: 285px;
+  height: 47px;
+  text-align: center;
+}
+footer .footer-info__contact th:last-child {
+  border-right: none;
+}
+footer .footer-info__contact th:first-child {
+  border-left: none;
+}
+footer .footer-info__contact__adress {
+  text-transform: uppercase;
+}
+footer .footer-info__contact__social img {
+  padding-inline: 20px;
 }/*# sourceMappingURL=style.css.map */
