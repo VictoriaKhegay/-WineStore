@@ -1,0 +1,211 @@
+@media only screen and (max-width: 500px) {
+    * {
+    margin: 0;
+    padding: 0;
+}
+    
+    .conteiner{
+        width: 500px;
+        margin: auto;
+    }
+
+    .main-section{
+    background-image: url("../img/bcg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.main{
+    &_info{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a{
+            font-size: 13px;
+            color:white;
+            text-decoration: none;
+
+        }
+    }
+    &_menu{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+        .th-last{
+            border-right: none;
+        }
+        table{
+            width: 100%; 
+            border-collapse: collapse;
+            //border: 1px solid #FFFFFF;
+        }
+        
+    }
+
+&_button{
+    display: flex;
+    flex-direction: column;
+
+}
+}
+.wine-taste{
+    background-color: #282828;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+            .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 10px;
+            width: 410px;
+            
+            }
+    &-wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 3px solid #C4C4C4;
+        width: 420px;
+        height: 700px;
+        display: flex;
+
+        &__title{
+            width: 450px;
+            font-size: 22px;
+            text-align: center; 
+            padding-top: 80px;
+            padding-bottom: 40px; 
+        }
+        &__description{
+            width: 450px;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 40px; 
+        }
+        img{
+            width: 160px;
+            height: 160px;
+            padding-top: 50px; 
+            padding-bottom: 0; 
+        }
+    }
+}
+
+.wine-harvest{
+    .collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-text{
+            &__title{
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            .collection-button{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &-img {
+            &__big{
+                display: flex;
+                justify-content: center;
+                padding-top: 60px;
+                img{
+                width: 460px;
+                height: 460px;
+                }
+            }
+            &__small{
+                padding-top: 30px;
+                display: grid;
+                grid-template-columns: 220px 220px;
+                grid-gap: 20px;
+                img{
+                    width: 220px;
+                    height: auto;
+                }
+                &-first{
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+.wine-record{
+    background-color: #282828;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .wine-tasting{
+        width: 480px;
+        height: 538px;
+        border: none;
+        z-index: 1; 
+        position: relative;
+        &__title{
+        
+            font-size:36px;
+            position: relative;
+            z-index: 0; 
+            top: 0;
+            left: 30px;
+            background-color: #282828;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .img1{
+            display: none;
+          }
+        .img2{
+            display: none;
+        }
+        &__application{
+            width: 460px;
+            height: auto;
+            display: flex;
+            padding-top: 40px;
+            margin: auto; 
+            flex-direction: column;
+        }
+    }
+}
+
+footer{    
+    .footer-info{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        &__menu{
+            display: none;                
+        }
+        &__contact{
+            th:first-child{
+                display: none;
+            }
+            table{
+                width: 100%; 
+                border-collapse: collapse;
+                //border: 1px solid #FFFFFF;
+            }
+            th {
+                border: 1px solid #FFFFFF;
+                width: 170px;
+                height: 47px;
+                text-align: center;
+            }
+            &__social{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    padding-inline: 20px;
+                }
+            }
+        }
+    }
+}
+}
